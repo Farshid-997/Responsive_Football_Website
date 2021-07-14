@@ -1,61 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* header part styling */
 body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
 }
-.top-banner{
-    display: flex;
-   
+header{
     background-color:#2d25a0;
     width: 100%;
-    height:690px;
+    height:677px;
 }
-.half-width{
-    width:50%;
-    padding-left: 150px;
+.top-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 153px;
+    padding-left: 156px;
+    padding-right: 140.99px;
 }
 
-.half-width h1{
+header h1{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-right: 102px;
+    font-weight: 700;
     font-size: 64px;
-    line-height: 80px;
-    position: absolute;
-    width: 538px;
-    height: 230px;
-    left: 156px;
-    top: 223px;
-    color:white;
-    transition: transform 5 ease-in;
-
-}
-.half-width h1:hover{
-    transform: scale(1.5);
-}
-
-.watchLive-button{
- 
- display: flex;
-flex-direction: row;
-align-items: flex-start; 
-padding: 10px 24px 10px 24px;
-text-decoration: none;
-position: relative;
-width: 168px;
-height: 45px;
-left: 156px;
-top: 463px;
-
-background: #E02C6D;
-}
-.fa-arrow-right{
     color: white;
 }
-.half-width img{
-    width:80%;
-    padding:30px;
+.button-gap{
+    margin-bottom: 27px;
 }
-/* players styles */
+
+
+/* .header h1:hover{
+    transform: scale(1.5);
+} */
+
+.watch-button{
+    text-decoration: none;
+    
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    color:white;
+    font-weight: 500;
+    background-color: #E02C6D;
+}
+
+header img{
+    width: 556.01px;
+    height: 438px;}
+
+
+
+/*players styles */
 
 
 .container{
@@ -66,9 +65,9 @@ background: #E02C6D;
 }
 .players{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-   
+    grid-template-columns: repeat(3,350px);
     grid-gap:30px;
+    column-gap:0px;
     margin-right: 5px;
    
 }
@@ -78,9 +77,6 @@ background: #E02C6D;
     width:330px;
     height: 474px;
   
-    
-  
-   
 }
 .player-banner img{
     width: 300px;
@@ -107,7 +103,5 @@ background: #E02C6D;
     padding-bottom: 63px;
     padding-left:475px;
     padding-right: 510px;
-    
-  
 
 }
