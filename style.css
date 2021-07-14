@@ -77,7 +77,7 @@ header img{
 }
 .player{
     border:3px solid white;
-    box-shadow: 0px 0px 40px black;
+    box-shadow: 5px 10px 8px #888888;
     width:330px;
     height: 474px;
   
@@ -120,15 +120,55 @@ color:#969bab;
  /* media query */
 
  /* mobile devices */
- @media only screen and(max-width:688px) {
-
+ @media only screen and (max-width:688px) {
     .container{
-        width:100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-left: 30px;
     }
-    .player,.blog,.courses{
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        
+    }
+    header{
+        width: 150%;
         flex-direction: column;
     }
-    .players, .blogs{
-        grid-template-columns: repeat(1,1fr);
+    .title h1{
+        font-size: 36px;
+        line-height: 50px;
     }
+    .header-img img{
+        width: 150px;
+        height: 260px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .footer-main{
+        margin-bottom: 169px;
+    }
+    .football-img{
+        width: 75%;
+        height:60%;
+        margin-bottom: 30px;
+    }
+    
+    
 }
