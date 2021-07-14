@@ -2,22 +2,34 @@
 /* header part styling */
 body{
     font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .top-banner{
     display: flex;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px;
+    background-color:#2d25a0;
+    width: 100%;
+    height:690px;
 }
-.half-width h1{
-    position: absolute;
-    top:223px;
-    left:156px;
-    font-size: 64px;
-    line-height: 80px;
-    text-align: left;
-    color:red;
+.half-width{
+    width:50%;
+    padding-left: 150px;
 }
 
+.half-width h1{
+    font-size: 64px;
+    line-height: 80px;
+    position: absolute;
+width: 538px;
+height: 230px;
+left: 156px;
+top: 223px;
+color:white;
+}
 .watchLive-button{
-    text-decoration: none;
+    /* text-decoration: none;
     background-image:linear-gradient(orange,tomato);
     border-radius: 20px;
     padding:15px 40px;
@@ -25,15 +37,21 @@ body{
     font-weight:400;
     width: 900px;
     margin-top:10px 2px;
+} */
+/* display: flex;
+flex-direction: row;
+align-items: flex-start; */
+padding: 10px 24px 10px 24px;
+text-decoration: none;
+position: relative;
+width: 168px;
+height: 45px;
+left: 156px;
+top: 463px;
+
+background: #E02C6D;
 }
 .half-width img{
-   width:556px;
-   height: 438px;
-   position: absolute;
-   left:1300px;
-   top:153px;
-  
-
+    width:80%;
+    padding:30px;
 }
-
-
