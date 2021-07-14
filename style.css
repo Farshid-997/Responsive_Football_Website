@@ -7,8 +7,7 @@ body{
 }
 .top-banner{
     display: flex;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:50px;
+   
     background-color:#2d25a0;
     width: 100%;
     height:690px;
@@ -22,12 +21,18 @@ body{
     font-size: 64px;
     line-height: 80px;
     position: absolute;
-width: 538px;
-height: 230px;
-left: 156px;
-top: 223px;
-color:white;
+    width: 538px;
+    height: 230px;
+    left: 156px;
+    top: 223px;
+    color:white;
+    transition: transform 5 ease-in;
+
 }
+.half-width h1:hover{
+    transform: scale(1.5);
+}
+
 .watchLive-button{
     /* text-decoration: none;
     background-image:linear-gradient(orange,tomato);
@@ -38,9 +43,9 @@ color:white;
     width: 900px;
     margin-top:10px 2px;
 } */
-/* display: flex;
+ display: flex;
 flex-direction: row;
-align-items: flex-start; */
+align-items: flex-start; 
 padding: 10px 24px 10px 24px;
 text-decoration: none;
 position: relative;
@@ -51,7 +56,34 @@ top: 463px;
 
 background: #E02C6D;
 }
+.fa-arrow-right{
+    color: white;
+}
 .half-width img{
     width:80%;
     padding:30px;
+}
+/* players styles */
+
+
+.container{
+    margin-top: 20px;
+    padding:180px;
+    border-radius: 5px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:15px;
+   
+}
+.player{
+    width:253px;
+  
+   
+}
+.player-banner img{
+    width: 330px;
+    height:474px;
+    
 }
