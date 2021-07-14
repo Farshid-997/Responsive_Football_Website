@@ -148,8 +148,12 @@ color:#969bab;
         line-height: 50px;
     }
     .header-img img{
-        width: 150px;
+        width: 100px;
         height: 260px;
+        position: absolute;
+        left: 344px;
+        top: 374px;
+
     }
     .players{
         display: grid;
