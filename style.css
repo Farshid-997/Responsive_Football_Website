@@ -33,9 +33,10 @@ header h1{
 }
 
 
-/* .header h1:hover{
+ header h1:hover{
     transform: scale(1.5);
-} */
+    transition: transform 1s ease-in-out;
+}  
 
 .watch-button{
     text-decoration: none;
@@ -47,10 +48,15 @@ header h1{
     font-weight: 500;
     background-color: #E02C6D;
 }
-
+.watch-button:hover{
+   transform: scale(1.5);
+   transition: transform 2s ease-in-out;
+   
+}
 header img{
     width: 556.01px;
-    height: 438px;}
+    height: 438px;
+}
 
 
 
@@ -93,15 +99,21 @@ header img{
     
 }
 /* footer part */
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- .football-img{
+footer{
     margin-top:158px;
-    padding-bottom: 63px;
-    padding-left:475px;
-    padding-right: 510px;
-
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
 }
+.footer img{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:480px;
+    height: 110px;
+}
+ footer .fab{
+padding-right:15px;
+color:#969bab;
+
+ }
